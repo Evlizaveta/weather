@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="applik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on the button below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q71-VD-A44">
+                                <rect key="frame" x="76" y="89" width="241" height="27.333333333333329"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="0.091633208096027374" green="0.3525235652923584" blue="0.66214311122894287" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountain" translatesAutoresizingMaskIntoConstraints="NO" id="XVf-cQ-vdJ">
+                                <rect key="frame" x="121.66666666666669" y="180.33333333333334" width="150" height="150.00000000000003"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="H6F-Ii-ZuP"/>
+                                    <constraint firstAttribute="height" constant="150" id="Vax-it-pom"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="314-lD-A86">
+                                <rect key="frame" x="151.66666666666666" y="338.33333333333331" width="90" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get data"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.62275391817092896" green="0.78168445825576782" blue="0.92072737216949463" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XVf-cQ-vdJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3df-Qd-vhE"/>
+                            <constraint firstItem="314-lD-A86" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IfM-GJ-0bY"/>
+                            <constraint firstItem="314-lD-A86" firstAttribute="top" secondItem="XVf-cQ-vdJ" secondAttribute="bottom" constant="8" symbolic="YES" id="TLL-JM-vCz"/>
+                            <constraint firstItem="Q71-VD-A44" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VXj-Dm-mth"/>
+                            <constraint firstItem="XVf-cQ-vdJ" firstAttribute="top" secondItem="Q71-VD-A44" secondAttribute="bottom" constant="64" id="WDi-9b-YFK"/>
+                            <constraint firstItem="Q71-VD-A44" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="qv6-bs-Wga"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myButton" destination="314-lD-A86" id="Vji-fT-Pqs"/>
+                        <outlet property="myLabel" destination="Q71-VD-A44" id="pS8-QZ-hPF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mountain" width="512" height="512"/>
+    </resources>
+</document>
